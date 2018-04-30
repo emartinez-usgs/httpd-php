@@ -189,7 +189,8 @@ node {
           ${PENTEST_CONTAINER}
         # Cleaning up any leftover images...
         docker image rm --force \
-          ${DEPLOY_IMAGE} \
+          ${IMAGE_BASE}/${IMAGE_NAME}:${IMAGE_VERSION} \
+          ${IMAGE_NAME}:${IMAGE_VERSION} \
           ${LOCAL_IMAGE}
         exit 0
       """
