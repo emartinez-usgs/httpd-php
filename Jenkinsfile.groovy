@@ -66,7 +66,7 @@ node {
       // Start a container to run penetration tests against
       sh """
         docker run --rm --name ${PENTEST_CONTAINER} \
-          -d ${IMAGE_NAME}:${IMAGE_VERSION}
+          -d ${LOCAL_IMAGE}
       """
 
       // Start a container to execute OWASP PENTEST
