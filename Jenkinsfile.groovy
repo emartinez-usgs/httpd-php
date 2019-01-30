@@ -8,7 +8,7 @@ node {
 
 
   CONTAINER_BASE = "${GITLAB_INNERSOURCE_REGISTRY}/devops/images"
-  FROM_IMAGE = "${IMAGE_BASE}/usgs/centos"
+  FROM_IMAGE = "${CONTAINER_BASE}/usgs/centos"
 
   INTERNAL_IMAGE_NAME = "${CONTAINER_BASE}/${params.IMAGE_NAME}"
   PUBLIC_IMAGE_NAME = "${params.IMAGE_NAME}"
