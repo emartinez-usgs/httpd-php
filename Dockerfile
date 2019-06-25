@@ -2,9 +2,9 @@ ARG FROM_IMAGE='usgs/centos'
 FROM $FROM_IMAGE
 
 LABEL maintainer="Eric Martinez <emartinez@usgs.gov>" \
-      dockerfile_version="1.0.0" \
+      dockerfile_version="1.1.0" \
       apache_version="2.4.x" \
-      php_version="5.5.x"
+      php_version="7.1.x"
 
 
 # add webtatic for php55
@@ -22,13 +22,13 @@ RUN yum install -y \
       libedit2 \
       libxml2 \
       make \
-      php55w \
-      php55w-gd \
-      php55w-ldap \
-      php55w-mysql \
-      php55w-pdo \
-      php55w-pecl-apcu \
-      php55w-pgsql \
+      php71w \
+      php71w-gd \
+      php71w-ldap \
+      php71w-mysql \
+      php71w-pdo \
+      php71w-pecl-apcu \
+      php71w-pgsql \
       pkg-config \
       which \
       xz-utils \

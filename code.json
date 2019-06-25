@@ -3,7 +3,7 @@
     "name": "usgs/httpd-php",
     "organization": "U.S. Geological Survey",
     "description": "An image for running Apache+PHP on CentOS.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "status": "Beta",
 
     "permissions": {
@@ -41,7 +41,7 @@
     },
 
     "date": {
-      "metadataLastUpdated": "2018-03-14"
+      "metadataLastUpdated": "2018-06-25"
     }
   }
 ]
